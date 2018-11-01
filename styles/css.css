@@ -1,0 +1,64 @@
+
+*, body{
+	margin:0;
+	padding: 0;
+	font-family: 'Kanit', sans-serif;
+}
+
+.hello{
+	width : 100%;
+	background-color: #f0f8ff;
+	border-radius: 2px;
+	padding: 15px;
+}
+
+.name{
+	text-align: center;
+}
+
+#name_inside{
+	font-weight: bold;
+}
+
+.profile_wrapper{
+	margin-top: 1em;
+	width: 40%;
+	margin: 1em auto;
+	text-align: center;
+}
+
+#profile{
+	max-width: 100%;
+}
+
+.description{
+	margin-top:1.5em;
+	padding: 20px;
+	background-color: white;
+
+}
+
+.label{
+	font-weight: bold;
+}
+
+.text{
+	font-style: italic;
+}
+
+.information{
+	padding: 0.65em 0;
+}
+
+.information_btn{
+	text-align: center;
+}
+
+.information_btn:hover{
+	background-color: skyblue;
+	border-radius: 10px;
+}
+
+.status{
+	color:green;
+}

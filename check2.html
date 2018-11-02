@@ -39,7 +39,7 @@
 							<div class="header_content d-flex flex-row align-items-center justify-content-start">
 								<div class="logo_container">
 									<a href="#">
-										<div class="logo_text">Unic<span>at</span></div>
+										<div class="logo_text">App<span>sent</span></div>
 									</a>
 								</div>
 								<nav class="main_nav_contaner ml-auto">
@@ -122,7 +122,7 @@
 					<div class="row fill_height">
 
 						<div class="col-lg-8 about_col about_col_right">
-							<form class="counter_form_content d-flex flex-column align-items-center justify-content-center" id="add">
+							<form class="counter_form_content d-flex flex-column align-items-center justify-content-center" id="incode">
 								<div class="counter_form_title">ใส่code</div>
 								<input type="text" class="counter_input" placeholder="Your Code:" name="code" id="code">
 							
@@ -164,8 +164,21 @@
 	<script src="plugins/parallax-js-master/parallax.min.js"></script>
 	<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
 	<script src="js/about.js"></script>
+	<script src="js/check2.js"></script>
+	<script>
+	var config = {
+		apiKey: "AIzaSyDp27nzyKjhTwzdHol9FYOV8e9CvT3_3s4",
+		authDomain: "checkin-class-itkmitl.firebaseapp.com",
+		databaseURL: "https://checkin-class-itkmitl.firebaseio.com",
+		projectId: "checkin-class-itkmitl",
+		storageBucket: "checkin-class-itkmitl.appspot.com",
+		messagingSenderId: "56110941267"
+	  };
+	  firebase.initializeApp(config)
+	  const db = firebase.firestore();
+	db.settings({ timestampsInSnapshots: true });
 
-
+</script>
 </body>
 
 </html>

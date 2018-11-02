@@ -34,7 +34,7 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text">Unic<span>at</span></div>
+									<div class="logo_text">App<span>sent</span></div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
@@ -42,7 +42,7 @@
 									<li><a href="index2.html">หน้าแรก</a></li>
 
 										<li><a href="contact.html">สร้างคอร์ส</a></li>
-										<li><a href="login.html">Logout</a></li>
+										<li><a href="login2.html">Logout</a></li>
 								</ul>
 								<div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
 
@@ -96,7 +96,7 @@
 				<li><a href="index2.html">หน้าแรก</a></li>
 
 										<li><a href="contact.html">สร้างคอร์ส</a></li>
-										<li><a href="login.html">Logout</a></li>
+										<li><a href="login2.html">Logout</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -136,8 +136,10 @@
 					<div class="col fill_height">
 						<form class="counter_form_content d-flex flex-column align-items-center justify-content-center" id="add">
 							<div class="counter_form_title">Code เช็คชื่อ</div>
-							<input type="text" class="counter_input" placeholder="ไว้โชว์code:" name="incode" id="incode">
-						
+							
+							<div class="counter_text" name="code" id="code">
+								<p class="text">ปกติ</p>
+							</div>
 							
 							
 							<button type="submit" class="counter_form_button">submit now</button>
@@ -173,21 +175,7 @@
 <script src="js/custom.js"></script>
 
 
-<script>
-	// Initialize Firebase
-	var config = {
-apiKey: "AIzaSyDp27nzyKjhTwzdHol9FYOV8e9CvT3_3s4",
-authDomain: "checkin-class-itkmitl.firebaseapp.com",
-databaseURL: "https://checkin-class-itkmitl.firebaseio.com",
-projectId: "checkin-class-itkmitl",
-storageBucket: "checkin-class-itkmitl.appspot.com",
-messagingSenderId: "56110941267"
-};
-	firebase.initializeApp(config);
-	const db = firebase.firestore();
-	db.settings({ timestampsInSnapshots: true }); 
-</script>
-<script src="js/plus_st.js"></script>
+<script src="js/code.js"></script>
 
 </body>
 </html>

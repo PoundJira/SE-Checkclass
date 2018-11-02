@@ -1,4 +1,6 @@
-
+if(localStorage.getItem('id')==""){
+    window.location.href="login2.html";
+  }
 const cafeList = document.querySelector('#cafe-list');
 const form = document.querySelector('#course2');
 
@@ -29,14 +31,14 @@ db.collection('teacher').get().then(snapshot => {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     var text = "";
-    db.collection('teacher').doc(localStorage.getItem('id')).collection('subject').add({
+    db.collection('teacher').doc(localStorage.getItem('id')).collection('subject').doc(form.namecourse.value).set({
         namecourse: form.namecourse.value,
         passcourse: form.passcourse.value,
         nameteacher: localStorage.getItem('nameteacher'),
         day: form.day.value,
         time: form.time.value,
         room: form.room.value,
-        count: {
+       
             week01:[makeid(text)],
             week02:[makeid(text)],
             week03:[makeid(text)],
@@ -52,9 +54,9 @@ form.addEventListener('submit', (e) => {
             week13:[makeid(text)],
             week14:[makeid(text)],
             week15:[makeid(text)],
-            week16:[makeid(text)]
+            week16:[makeid(text)],
            
-        },
+        
         student:[]
     });
     form.namecourse.value = '';

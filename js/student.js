@@ -7,13 +7,18 @@ var config = {
   messagingSenderId: "56110941267"
 };
 firebase.initializeApp(config)
+const db = firebase.firestore();
+db.settings({ timestampsInSnapshots: true });
 
-
+if(localStorage.getItem('id')==""){
+  window.location.href="login.html";
+}
 var stref2 = firebase.firestore();
 
 
   stref2.collection('students').doc(localStorage.getItem('id')).get()
   .then(function (doc) {
+    
     document.getElementById("fullname").innerHTML = doc.data().name
     document.getElementById("std_id").innerHTML = doc.data().id
   }

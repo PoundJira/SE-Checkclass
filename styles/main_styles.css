@@ -1124,7 +1124,7 @@ section
 }
 .counter_background
 {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1146,6 +1146,7 @@ section
 }
 .counter_text
 {
+	font-size: 75px;
 	margin-top: 19px;
 }
 .counter_text p
@@ -1197,7 +1198,7 @@ section
 	position: absolute;
 	top: 0;
 	right: 30px;
-	width: 380px;
+	width: 1100px;
 	height: 100%;
 	background: #FFFFFF;
 	padding-left: 40px;
@@ -1223,14 +1224,14 @@ section
 }
 .counter_input
 {
-	width: 100%;
+	width: 75%;
 	height: 46px;
-	border: solid 1px #e5e5e5;
-	border-radius: 3px;
+	border: solid 3px #e5e5e5;
+	border-radius: 10px;
 	padding-left: 20px;
 	outline: none;
 	color: #384158;
-	font-size: 14px;
+	font-size: 17px;
 }
 .counter_input:not(:last-child)
 {
@@ -1292,10 +1293,10 @@ section
 }
 .counter_form_button
 {
-	width: 100%;
+	width: 75%;
 	height: 46px;
 	color: #FFFFFF;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 500;
 	text-transform: uppercase;
 	border: none;
